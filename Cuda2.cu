@@ -26,14 +26,14 @@ int main(int argc, char **argv){
 	int N, w;
 	float p;
 
-	N = atoi(argv[1]); //Pernaw tis times apo tin konsola
+	N = atoi(argv[1]); //Read values from console
 	p = atof(argv[2]);
 	w = atoi(argv[3]);
 	int n = pow(2, N);
 	makeAdjacency(n, p, w);  //Initialize distance values
 	clock_t start = clock();
 	int i, j, k;
-	D = (float **)malloc(n*sizeof(float *));  //Allocation and initialization D
+	D = (float **)malloc(n*sizeof(float *));  //Allocation and initialization of D
 	for (i = 0; i<n; i++) D[i] = (float *)malloc(n*sizeof(float));
 	for (i = 0; i<n; i++){
 		for (j = 0; j<n; j++){
