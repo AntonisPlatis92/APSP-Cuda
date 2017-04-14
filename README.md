@@ -1,4 +1,4 @@
-# apsp_cuda
+# APSP Cuda
 
 3 different implementations (Cuda1, Cuda2 and Cuda3) of the APSP Algorithm in Cuda.
 
